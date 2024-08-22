@@ -37,13 +37,13 @@ This repository contains code for training and testing skin lesion classificatio
    - Use the provided `Dockerfile` located in the `/app/docker/` directory to set up the environment. Build the Docker image using the following command:
      
      ```bash
-     docker build -t skin-lesion-classifier -f docker/Dockerfile .
+     docker build -t skin-lesion-classifier ./docker/    
      ```
 
    - Once the image is built, you can run a container with:
    
      ```bash
-     docker run -it --rm -v $(pwd):/app skin-lesion-classifier
+     docker run --gpus all -it --rm -v $(pwd):/app skin-lesion-classifier
      ```
 
    - This will mount the current directory into the Docker container and allow you to run the code in an isolated environment.
