@@ -10,3 +10,6 @@
 
 # Ignore all CSV files
 *.csv
+
+# Ignore all models files
+*.pth

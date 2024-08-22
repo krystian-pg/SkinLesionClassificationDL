@@ -9,3 +9,5 @@ imbalanced-learn
 albumentations
 opencv-python
 pillow
+grad-cam
+pytorch-gradcam
