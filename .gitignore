@@ -13,3 +13,4 @@
 
 # Ignore all models files
 *.pth
+data/HAM10000_metadata
