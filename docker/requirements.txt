@@ -1,0 +1,11 @@
+pytorch-tabnet
+scikit-learn
+tqdm
+seaborn
+matplotlib
+pandas
+numpy
+imbalanced-learn
+albumentations
+opencv-python
+pillow
