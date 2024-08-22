@@ -4,48 +4,6 @@
 
 This repository contains code for training and testing skin lesion classification models using various neural network architectures. The code also includes scripts for cross-validation, feature extraction, and model testing.
 
-## Project Structure
-
-The main directories and files in the project are organized as follows:
-
-/app/
-│
-├── data/
-│ ├── HAM10000_images/ # Directory containing HAM10000 images
-│ ├── HAM10000_metadata/ # Directory containing metadata for HAM10000 images
-│ ├── ISIC2018_Task3_Test_Images/ # Directory containing test images for ISIC2018 Task 3
-│ ├── ISIC2018_Task3_Test_GroundTruth/ # Ground truth for ISIC2018 Task 3 test images
-│
-├── models/
-│ ├── resnet/ # Directory for ResNet model files
-│ │ ├── best_model_ham10000_fold_1.pth # Best model weights for ResNet (fold 1)
-│ │ ├── best_model_ham10000_fold_2.pth # Best model weights for ResNet (fold 2)
-│ │ ├── best_model_ham10000_fold_3.pth # Best model weights for ResNet (fold 3)
-│ ├── densenet/ # Directory for DenseNet model files
-│ │ ├── best_model_ham10000_fold_1.pth # Best model weights for DenseNet (fold 1)
-│ │ ├── best_model_ham10000_fold_2.pth # Best model weights for DenseNet (fold 2)
-│ │ ├── best_model_ham10000_fold_3.pth # Best model weights for DenseNet (fold 3)
-│ ├── efficientnet/ # Directory for EfficientNet model files
-│ │ ├── best_model_ham10000_fold_1.pth # Best model weights for EfficientNet (fold 1)
-│ │ ├── best_model_ham10000_fold_2.pth # Best model weights for EfficientNet (fold 2)
-│ │ ├── best_model_ham10000_fold_3.pth # Best model weights for EfficientNet (fold 3)
-│ ├── extracted_features_train_val.csv # Extracted features from the training/validation set
-│
-├── training_data/
-│ ├── resnet/cross_validation_results_ham10000.csv # Cross-validation results for ResNet
-│ ├── densenet/cross_validation_results_ham10000.csv # Cross-validation results for DenseNet
-│ ├── efficientnet/cross_validation_results_ham10000.csv # Cross-validation results for EfficientNet
-│
-├── scripts/
-│ ├── HAM10000Dataset.py # Dataset class for loading and processing images
-│ ├── ModelTester.py # Script for testing the model on a test dataset
-│ ├── SimpleTrainingMetricsPlotter.py # Script for plotting training metrics
-│ ├── SkinLesionClassifier.py # Class for handling the skin lesion classification model
-│
-└── docker/
-├── Dockerfile # Dockerfile for setting up the environment
-├── requirements.txt # List of Python packages required for the project
-
 ### 1. `cross_val_images.ipynb`
 
 - **Purpose**: This notebook handles cross-validation of the models using the training dataset. It evaluates the model's performance across multiple folds and saves the results for further analysis.
