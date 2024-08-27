@@ -14,3 +14,4 @@
 # Ignore all models files
 *.pth
 data/HAM10000_metadata
+scripts/__pycache__/SkinLesionClassifier.cpython-310.pyc
