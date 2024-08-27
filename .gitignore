@@ -1,7 +1,6 @@
 # Ignore all image files
 *.jpg
 *.jpeg
-*.png
 *.gif
 *.bmp
 *.tiff
@@ -12,6 +11,5 @@
 *.csv
 
 # Ignore all models files
-*.pth
 data/HAM10000_metadata
 scripts/__pycache__/SkinLesionClassifier.cpython-310.pyc
